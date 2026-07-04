@@ -77,6 +77,11 @@
       z-index: 1;
     }
 
+    a.project-card {
+      display: block;
+      text-decoration: none;
+    }
+
     #home-spacer {
       height: 100vh;
     }
@@ -1728,7 +1733,7 @@
 
     <div class="projects-grid">
 
-      <!-- CARD 1: Phishing Detection — tall, left col -->
+      <!-- CARD 1: Phishing Detection — tall, left col (no link yet) -->
       <div class="project-card tall" style="min-height: 660px;">
         <div class="card-image-wrap">
           <div class="card-bg-gradient-1" style="position:absolute;inset:0;"></div>
@@ -1776,7 +1781,8 @@
       <div style="display:flex;flex-direction:column;gap:24px;">
 
         <!-- CARD 2: Website Classification -->
-        <div class="project-card" style="min-height:310px;">
+        <a href="https://github.com/ketanbagewadi/LLM-Based-Website-Classification" target="_blank" class="project-card"
+          style="min-height:310px;">
           <div class="card-image-wrap" style="min-height:310px;position:relative;">
             <div class="card-bg-gradient-2" style="position:absolute;inset:0;"></div>
             <div
@@ -1811,9 +1817,9 @@
               context understanding. Sentence-T5-XXL with cosine-similarity and zero-shot classification for lightweight
               inference. Served via Django REST Framework in production.</p>
           </div>
-        </div>
+        </a>
 
-        <!-- CARD 3: CRM System -->
+        <!-- CARD 3: CRM System (no link yet) -->
         <div class="project-card" style="min-height:310px;">
           <div class="card-image-wrap" style="min-height:310px;position:relative;">
             <div class="card-bg-gradient-3" style="position:absolute;inset:0;"></div>
@@ -1855,7 +1861,8 @@
       </div>
 
       <!-- CARD 4: DeepFake Detection — full width -->
-      <div class="project-card" style="grid-column: 1 / -1; min-height: 320px;">
+      <a href="https://github.com/ketanbagewadi/Deepfake-Detection-Using-DeepLearning" target="_blank"
+        class="project-card" style="grid-column: 1 / -1; min-height: 320px;">
         <div class="card-image-wrap" style="min-height:320px;position:relative;">
           <div class="card-bg-gradient-4" style="position:absolute;inset:0;"></div>
           <div
@@ -1910,7 +1917,87 @@
             Celeb-DF datasets for deepfake video classification. Android ChatBot powered by Google PaLM-2 API with
             ChatGPT-like conversational flow, Firebase backend and real-time streaming responses.</p>
         </div>
-      </div>
+      </a>
+
+      <!-- CARD 5: MediVoice AI -->
+      <a href="https://github.com/ketanbagewadi/MediVoice-AI" target="_blank" class="project-card"
+        style="min-height:310px;">
+        <div class="card-image-wrap" style="min-height:310px;position:relative;">
+          <div class="card-bg-gradient-3" style="position:absolute;inset:0;"></div>
+          <div
+            style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:30px 24px 80px;">
+            <div class="laptop-mockup" style="width:80%;max-width:320px;">
+              <div class="laptop-screen">
+                <div class="laptop-screen-inner" style="height:130px;font-size:10px;line-height:1.7;">
+                  <div>
+                    <div style="color:#4ade80;">MediVoice AI</div>
+                    <div style="color:#666;">Mode: Speech → Text → Diagnosis</div>
+                    <div style="color:#888;margin-top:6px;">STT: Wav2Vec2 (Transformers)</div>
+                    <div style="color:#888;">LLM: Medical-Llama</div>
+                    <div style="color:#4ade80;margin-top:6px;">API: FastAPI + Uvicorn</div>
+                  </div>
+                </div>
+              </div>
+              <div class="laptop-base"></div>
+              <div class="laptop-stand"></div>
+            </div>
+          </div>
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-info">
+          <p class="card-category">AI Healthcare · Voice</p>
+          <h3 class="card-title" style="font-size:18px;">MediVoice AI</h3>
+          <div class="card-tags">
+            <span class="card-tag">Wav2Vec2</span>
+            <span class="card-tag">Medical-Llama</span>
+            <span class="card-tag">FastAPI</span>
+            <span class="card-tag">Streamlit</span>
+          </div>
+          <p class="card-desc">AI medical voice assistant that converts spoken patient symptoms into text using
+            Wav2Vec2, then feeds it to a Medical-Llama model for medicine suggestions and guidance. FastAPI backend with
+            a Streamlit UI for real-time interaction.</p>
+        </div>
+      </a>
+
+      <!-- CARD 6: RAG Chatbot -->
+      <a href="https://github.com/ketanbagewadi/RAG-chatbot" target="_blank" class="project-card"
+        style="min-height:310px;">
+        <div class="card-image-wrap" style="min-height:310px;position:relative;">
+          <div class="card-bg-gradient-4" style="position:absolute;inset:0;"></div>
+          <div
+            style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:30px 24px 80px;">
+            <div class="laptop-mockup" style="width:80%;max-width:320px;">
+              <div class="laptop-screen">
+                <div class="laptop-screen-inner" style="height:130px;font-size:10px;line-height:1.7;">
+                  <div>
+                    <div style="color:#a78bfa;">RAG Chatbot</div>
+                    <div style="color:#666;">Vector DB: ChromaDB</div>
+                    <div style="color:#888;margin-top:6px;">Framework: LangChain</div>
+                    <div style="color:#888;">LLM: OpenAI / Ollama</div>
+                    <div style="color:#a78bfa;margin-top:6px;">Streaming: token-by-token ✓</div>
+                  </div>
+                </div>
+              </div>
+              <div class="laptop-base"></div>
+              <div class="laptop-stand"></div>
+            </div>
+          </div>
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-info">
+          <p class="card-category">AI · RAG Pipeline</p>
+          <h3 class="card-title" style="font-size:18px;">Personal Knowledge RAG Chatbot</h3>
+          <div class="card-tags">
+            <span class="card-tag">FastAPI</span>
+            <span class="card-tag">LangChain</span>
+            <span class="card-tag">ChromaDB</span>
+            <span class="card-tag">Sentence Transformers</span>
+          </div>
+          <p class="card-desc">Document-based chatbot that answers only from uploaded files (PDF/TXT/DOCX/MD) using
+            semantic search over embeddings stored in ChromaDB. Supports OpenAI or fully local Ollama mode, with
+            streaming answers and source citations via FastAPI.</p>
+        </div>
+      </a>
 
     </div>
 
