@@ -1737,7 +1737,9 @@
     <div class="projects-grid">
 
       <!-- CARD 1: Phishing Detection — tall, left col (no link yet) -->
+
       <div class="project-card tall" style="min-height: 660px;">
+        
         <div class="card-image-wrap">
           <div class="card-bg-gradient-1" style="position:absolute;inset:0;"></div>
           <div
@@ -1781,87 +1783,91 @@
       </div>
 
       <!-- RIGHT COLUMN — two stacked cards -->
-      <div style="display:flex;flex-direction:column;gap:24px;">
+<div style="display:flex;flex-direction:column;gap:24px;">
 
-        <!-- CARD 2: Website Classification -->
-        <a href="https://github.com/ketanbagewadi/LLM-Based-Website-Classification" target="_blank" class="project-card"
-          style="min-height:310px;">
-          <div class="card-image-wrap" style="min-height:310px;position:relative;">
-            <div class="card-bg-gradient-2" style="position:absolute;inset:0;"></div>
-            <div
-              style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:30px 24px 80px;">
-              <div class="laptop-mockup" style="width:80%;max-width:320px;">
-                <div class="laptop-screen">
-                  <div class="laptop-screen-inner" style="height:130px;font-size:10px;line-height:1.7;">
-                    <div>
-                      <div style="color:#bef264;">Website Classifier v2</div>
-                      <div style="color:#666;">Categories: 40+</div>
-                      <div style="color:#888;margin-top:6px;">Model: Sentence-T5-XXL</div>
-                      <div style="color:#888;">Zero-shot: ENABLED</div>
-                      <div style="color:#bef264;margin-top:6px;">Accuracy: 94.2%</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="laptop-base"></div>
-                <div class="laptop-stand"></div>
+  <!-- CARD 2: Website Classification + CRM (merged) -->
+  <a href="https://github.com/ketanbagewadi/LLM-Based-Website-Classification" target="_blank" class="project-card"
+    style="min-height:310px;">
+    <div class="card-image-wrap" style="min-height:310px;position:relative;">
+      <div class="card-bg-gradient-2" style="position:absolute;inset:0;"></div>
+      <div
+        style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:30px 24px 80px;">
+        <div class="laptop-mockup" style="width:80%;max-width:320px;">
+          <div class="laptop-screen">
+            <div class="laptop-screen-inner" style="height:130px;font-size:10px;line-height:1.7;">
+              <div>
+                <div style="color:#bef264;">Website Classifier v2</div>
+                <div style="color:#666;">Categories: 40+</div>
+                <div style="color:#888;margin-top:6px;">Model: Sentence-T5-XXL</div>
+                <div style="color:#888;">Zero-shot: ENABLED</div>
+                <div style="color:#bef264;margin-top:6px;">Accuracy: 94.2%</div>
               </div>
             </div>
-            <div class="card-overlay"></div>
           </div>
-          <div class="card-info">
-            <p class="card-category">ML · NLP</p>
-            <h3 class="card-title" style="font-size:18px;">Website Classification with LLMs</h3>
-            <div class="card-tags">
-              <span class="card-tag">Sentence-T5-XXL</span>
-              <span class="card-tag">Zero-shot</span>
-              <span class="card-tag">Django</span>
-            </div>
-            <p class="card-desc">Deployed dual production pipeline across 40+ categories. Llama 3.1 8B with RAG for deep
-              context understanding. Sentence-T5-XXL with cosine-similarity and zero-shot classification for lightweight
-              inference. Served via Django REST Framework in production.</p>
-          </div>
-        </a>
-
-        <!-- CARD 3: CRM System (no link yet) -->
-        <div class="project-card" style="min-height:310px;">
-          <div class="card-image-wrap" style="min-height:310px;position:relative;">
-            <div class="card-bg-gradient-3" style="position:absolute;inset:0;"></div>
-            <div
-              style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:30px 24px 80px;">
-              <div class="laptop-mockup" style="width:80%;max-width:320px;">
-                <div class="laptop-screen">
-                  <div class="laptop-screen-inner" style="height:130px;font-size:10px;line-height:1.7;">
-                    <div>
-                      <div style="color:#4ade80;">CRM Dashboard</div>
-                      <div style="color:#666;">DB Sync: 2 servers</div>
-                      <div style="color:#888;margin-top:6px;">Stack: Django + DRF</div>
-                      <div style="color:#888;">Deploy: DigitalOcean</div>
-                      <div style="color:#4ade80;margin-top:6px;">↑ 30% faster queries</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="laptop-base"></div>
-                <div class="laptop-stand"></div>
-              </div>
-            </div>
-            <div class="card-overlay"></div>
-          </div>
-          <div class="card-info">
-            <p class="card-category">Backend · DevOps</p>
-            <h3 class="card-title" style="font-size:18px;">CRM System & Business Expander</h3>
-            <div class="card-tags">
-              <span class="card-tag">Django</span>
-              <span class="card-tag">PostgreSQL</span>
-              <span class="card-tag">Nginx</span>
-              <span class="card-tag">Azure AD</span>
-            </div>
-            <p class="card-desc">Built with Django, DRF, JavaScript, Ajax, Nginx, Gunicorn, Azure AD, DigitalOcean
-              Droplet and PostgreSQL. Synced with 2+ database servers. Achieved 30% faster read/write operations. Fully
-              deployed on Linux with end-to-end production setup.</p>
-          </div>
+          <div class="laptop-base"></div>
+          <div class="laptop-stand"></div>
         </div>
-
       </div>
+      <div class="card-overlay"></div>
+    </div>
+    <div class="card-info">
+      <p class="card-category">ML · NLP · Backend</p>
+      <h3 class="card-title" style="font-size:18px;">Website Classification & CRM System</h3>
+      <div class="card-tags">
+        <span class="card-tag">Sentence-T5-XXL</span>
+        <span class="card-tag">Zero-shot</span>
+        <span class="card-tag">Django</span>
+        <span class="card-tag">PostgreSQL</span>
+      </div>
+      <p class="card-desc">Deployed dual production pipeline across 40+ categories using Llama 3.1 8B (RAG) and
+        Sentence-T5-XXL with zero-shot classification, served via Django REST Framework. Also built a CRM &
+        Business Expander system with Django, DRF, Nginx, Azure AD, and PostgreSQL synced across 2+ DB servers —
+        achieving 30% faster read/write operations, fully deployed on DigitalOcean.</p>
+    </div>
+  </a>
+
+  <!-- CARD 3: Multi-Agent Research Assistant -->
+  <a href="https://github.com/ketanbagewadi/multi-agent-research-assistant" target="_blank" class="project-card"
+    style="min-height:310px;">
+    <div class="card-image-wrap" style="min-height:310px;position:relative;">
+      <div class="card-bg-gradient-3" style="position:absolute;inset:0;"></div>
+      <div
+        style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:30px 24px 80px;">
+        <div class="laptop-mockup" style="width:80%;max-width:320px;">
+          <div class="laptop-screen">
+            <div class="laptop-screen-inner" style="height:130px;font-size:10px;line-height:1.7;">
+              <div>
+                <div style="color:#bef264;">Research Assistant</div>
+                <div style="color:#666;">Orchestration: LangGraph</div>
+                <div style="color:#888;margin-top:6px;">Agents: Planner→Writer</div>
+                <div style="color:#888;">Tools: MCP + Tavily</div>
+                <div style="color:#bef264;margin-top:6px;">Streaming: SSE ✓</div>
+              </div>
+            </div>
+          </div>
+          <div class="laptop-base"></div>
+          <div class="laptop-stand"></div>
+        </div>
+      </div>
+      <div class="card-overlay"></div>
+    </div>
+    <div class="card-info">
+      <p class="card-category">AI · Multi-Agent System</p>
+      <h3 class="card-title" style="font-size:18px;">Multi-Agent Research Assistant</h3>
+      <div class="card-tags">
+        <span class="card-tag">LangGraph</span>
+        <span class="card-tag">MCP</span>
+        <span class="card-tag">FastAPI</span>
+        <span class="card-tag">SSE</span>
+      </div>
+      <p class="card-desc">Multi-agent system (Planner, Searcher, Summarizer, Verifier, Writer) with LangGraph
+        orchestration. MCP servers wrap Tavily for search and fact-checking, with a self-correcting
+        verifier-retry loop to reduce hallucinations. Provider-agnostic LLM backend (Claude/OpenAI/Groq/Ollama)
+        via FastAPI, with real-time SSE streaming and SQLite storage.</p>
+    </div>
+  </a>
+
+</div>
 
       <!-- CARD 4: DeepFake Detection — full width -->
       <a href="https://github.com/ketanbagewadi/Deepfake-Detection-Using-DeepLearning" target="_blank"
